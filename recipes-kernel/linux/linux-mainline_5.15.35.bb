@@ -8,7 +8,7 @@ SRC_URI[sha256sum] = "0a1a5ae2f30eb2b38215e59077f045aabd7f4e2857a881482f02ea4818
 
 
 # # orangepi-zero-2 support added only for 5.15 kernel so add it to this recipe not to inc file
-SRC_URI:append:orange-pi-zero2  = " \
+SRC_URI_append:orange-pi-zero2  = " \
         file://defconfig \
         file://0001-dts-add-h616-and-orangepizero2.patch \
         file://0002-drv-add-dump_reg-and-sunxi-sysinfo-drivers.patch \

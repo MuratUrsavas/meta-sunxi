@@ -121,7 +121,7 @@ IMAGE_CMD:sunxi-sdimg () {
 }
 
 # write uboot.itb for arm64 boards
-IMAGE_CMD_sunxi-sdimg:append:sun50i () {
+IMAGE_CMD_sunxi-sdimg_append:sun50i () {
 	if [ -e "${DEPLOY_DIR_IMAGE}/${UBOOT_BINARY}" ]
 	then
 		dd if=${DEPLOY_DIR_IMAGE}/${UBOOT_BINARY} of=${SDIMG} bs=1024 seek=40 conv=notrunc

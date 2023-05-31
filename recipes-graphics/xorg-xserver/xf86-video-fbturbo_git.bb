@@ -18,7 +18,7 @@ S = "${WORKDIR}/git"
 
 CFLAGS += " -I${STAGING_INCDIR}/xorg "
 
-do_install:append() {
+do_install_append() {
     install -d ${D}${datadir}/X11/xorg.conf.d
     install -m 0644 ${WORKDIR}/20-fbturbo.conf ${D}${datadir}/X11/xorg.conf.d
 }

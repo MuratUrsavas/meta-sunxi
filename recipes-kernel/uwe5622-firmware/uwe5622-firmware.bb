@@ -6,7 +6,7 @@ S = "${WORKDIR}"
 
 COMPATIBLE_MACHINE = "orange-pi-zero2"
 
-SRC_URI:append = " \
+SRC_URI_append = " \
         file://wcnmodem.bin \
         file://wifi_2355b001_1ant.ini \
 "

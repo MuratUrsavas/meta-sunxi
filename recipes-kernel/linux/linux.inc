@@ -118,7 +118,7 @@ do_configure:prepend() {
     yes '' | oe_runmake -C ${S} O=${B} oldconfig
 }
 
-do_configure:append() {
+do_configure_append() {
     if test -e scripts/Makefile.fwinst ; then
         sed -i -e "s:-m0644:-m 0644:g" scripts/Makefile.fwinst
     fi

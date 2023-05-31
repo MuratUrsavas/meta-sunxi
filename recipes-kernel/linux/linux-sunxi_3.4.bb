@@ -11,7 +11,7 @@ SRCREV = "d47d367036be38c5180632ec8a3ad169a4593a88"
 
 LINUX_VERSION ?= "${PV}"
 
-MACHINE_KERNEL_PR:append = "a"
+MACHINE_KERNEL_PR_append = "a"
 
 SRC_URI += "git://github.com/linux-sunxi/linux-sunxi.git;branch=sunxi-3.4;protocol=https \
         file://0001-compiler-gcc-integrate-the-various-compiler-gcc-345-.patch \
